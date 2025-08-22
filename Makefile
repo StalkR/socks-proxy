@@ -1,5 +1,5 @@
 all:
-	go build .
+	go build
 install:
 	mkdir -p $(DESTDIR)/usr/bin
 	cp socks-proxy $(DESTDIR)/usr/bin

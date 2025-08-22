@@ -2,12 +2,14 @@ Source: socks-proxy
 Section: net
 Priority: extra
 Maintainer: StalkR <stalkr@stalkr.net>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Build-Depends:
+  debhelper (>= 13),
+  debhelper-compat (= 12),
+  golang-go
+Standards-Version: 4.7.2
 Homepage: https://github.com/StalkR/socks-proxy
 
 Package: socks-proxy
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: SOCKS5 proxy
- A simple SOCKS5 proxy in Go.
+Description: Simple Go SOCKS5 proxy.
